@@ -451,7 +451,121 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-modal">
+          <p class="footer-modal_title">Subscribe</p>
+          <form action="" class="footer-form">
+            <label
+              for="footer-email"
+              aria-label="footer-email"
+              class="footer-label"
+            >
+              <input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-btn" type="submit">
+              Subscribe<svg class="footer-btn_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="backdrop-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-message"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field-placeholder">
+            <label for="user-comment" class="modal-label"></label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-privacy">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              id="user-privacy"
+              class="input-check visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="check-text"
+              ><span class="user-privacy-text"
+                ><svg class="check-icon" width="20" height="20">
+                  <use
+                    href="./images/icons.svg#icon-Checkbox"
+                  ></use></svg></span
+              >I accept the terms and conditions of the<a
+                class="user-privacy-accent"
+                href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button class="madal-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
